@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: #ffffff;
+        overflow: hidden;
+      }
+      .passVali {
+        color: #6b240c;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 30px;
+        padding: 20px 0px 0px 20px;
+      }
+      .passValiContent {
+        color: #6b240c;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+        padding: 0px 0px 20px 20px;
+      }
+      .formBg {
+        background-color: #bdbbbb;
+        width: 100%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding: 20px 0px 20px 20px;
+        width: 100%;
+      }
+      label {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+      }
+      input {
+        width: 97%;
+        height: 30px;
+      }
+      .colorChange {
+        background-color: #0f2167;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 20px;
+      }
+      .passIns {
+        width: 100%;
+        background-color: #bdbbbb;
+        margin-top: 10px;
+        display: block;
+      }
+      .passInsCont,
+      .one,
+      .two,
+      .three,
+      .four {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+        padding: 20px;
+      }
+      .one,
+      .two,
+      .three,
+      .four {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="passVali">Password Validation</div>
+    <p class="passValiContent">Try to submit the form</p>
+    <div class="formBg">
+      <form>
+        <label>Username</label><br />
+        <input type="text" placeholder="Username" /><br /><br />
+        <label>Password</label><br />
+        <input type="password" placeholder="Password" /><br /><br />
+        <input type="Submit" value="Submit" class="colorChange" />
+      </form>
+    </div>
+    <div class="passIns">
+      <div class="passInsCont">Password must contain the following</div>
+      <div class="one">🗙 &nbsp;&nbsp;A lower case letter</div>
+      <div class="two">🗙 &nbsp;&nbsp;A Upper case letter</div>
+      <div class="three">🗙 &nbsp;&nbsp;A number</div>
+      <div class="four">🗙 &nbsp;&nbsp;Minimum <strong>8 Character</strong></div>
+    </div>
+  </body>
+</html>
